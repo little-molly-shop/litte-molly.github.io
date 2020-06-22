@@ -16,6 +16,11 @@ h1, h2, h3{
 	font-family: 'Balsamiq Sans', cursive;
 }
 
+h2{
+	font-size: 250%;
+	font-weight: 700;
+}
+
 p, ul, li{
 	font-family: 'Merriweather', serif;
 }
@@ -37,20 +42,18 @@ header{
 	background: linear-gradient(45deg, #eae9e4, #e7acaa);
 }
 
-header .wrap{
-}
-
 header h1{
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
-	font-size: 400%;
+	font-size: 500%;
 	font-weight: 700;
 }
 
 header h1 a{
 	display: block;
 	color: #e7acaa;
+	text-shadow: 4px 4px #eae9e4;
 }
 
 .burger-menu{
@@ -128,6 +131,10 @@ header nav ul li a:hover{
 .nav-active span:nth-child(3){
 	margin-top: -23px;
 	transform: rotate(-45deg);
+}
+
+.featured{
+
 }
 
 @media only screen and (max-width: 780px){
