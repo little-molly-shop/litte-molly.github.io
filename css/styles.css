@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=Merriweather:wght@300;400;700&display=swap');
+
+/*font-family: 'Balsamiq Sans', cursive;
+font-family: 'Merriweather', serif;*/
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-size: 16px;
+	background: #eae9e4;
+}
+
+h1, h2, h3{
+	font-family: 'Balsamiq Sans', cursive;
+}
+
+p, ul, li{
+	font-family: 'Merriweather', serif;
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+.wrap{
+	max-width: 1300px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+header{
+	min-height: 100vh;
+	padding: 25px 0;
+	background: linear-gradient(45deg, #eae9e4, #e7acaa);
+}
+
+header .wrap{
+}
+
+header h1{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 400%;
+	font-weight: 700;
+}
+
+header h1 a{
+	display: block;
+	color: #e7acaa;
+}
+
+.burger-menu{
+	position: fixed;
+	right: 3%;
+	z-index: 3;
+	cursor: pointer;
+}
+
+.burger-menu a{
+	display: block;
+}
+
+.burger-menu span{
+	display: block;
+	width: 60px;
+	height: 6px;
+	margin-bottom: 5px;
+	border-radius: 8px;
+	background: #eae9e4;
+	transition: .1s ease-out;
+}
+
+header nav{
+	position: fixed;
+	top: -100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: .3s ease-out;
+}
+
+.active{
+	top: 0;
+}
+
+header nav ul{
+  display: flex;
+  height: 100%;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding-left: 200px;
+  background: #fff;
+  z-index: 2;
+}
+
+header nav ul li{
+ margin: 0 10px;
+}
+
+header nav ul li a{
+	display: block;
+	padding: 20px;
+	color: #e2b995;
+	font-size: 400%;
+	font-weight: 700;
+}
+
+header nav ul li a:hover{
+	color: #9cb8a0;
+	transition: .3s ease-out;
+}
+
+.nav-active span:nth-child(1){
+	margin-top: 23px;
+	transform: rotate(45deg);
+}
+
+.nav-active span:nth-child(2){
+	transform: translateX(100%);
+	opacity: 0;
+	transition: .2s ease-out;
+}
+
+.nav-active span:nth-child(3){
+	margin-top: -23px;
+	transform: rotate(-45deg);
+}
